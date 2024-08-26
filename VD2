@@ -1,0 +1,12 @@
+def ve_cay(chieu_cao):
+    # Vẽ phần lá cây
+    for i in range(chieu_cao):
+        print(' ' * (chieu_cao - i - 1) + '*' * (2 * i + 1))
+
+    # Vẽ thân cây
+    than_cay = chieu_cao // 2
+    for i in range(than_cay):
+        print(' ' * (chieu_cao - 1) + '|')
+
+# Thực thi hàm để vẽ cây với chiều cao 5
+ve_cay(5)
